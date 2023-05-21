@@ -1,0 +1,25 @@
+CREATE TABLE employees
+(
+    employee_id serial primary key NOT NULL,
+    employee_ln varchar(64),
+    employee_fn varchar(64),
+    employee_role varchar(64),
+    employee_modified_date timestamp without time zone,
+    employee_delete_ind bool
+);
+
+CREATE TABLE properties
+(
+    prop_id serial primary key NOT NULL,
+    prop_name varchar(64),
+    prop_desc varchar(256),
+	employee_id int references employees(employee_id),
+    prop_purch_amt integer,
+    prop_qty integer,
+    prop_total_purch_amt integer,
+    prop_purch_date date,
+    prop_stat character varying(64),
+    prop_ret_date date,
+    prop_delete_ind boolean,
+	prop_modified_date timestamp without time zone
+);
