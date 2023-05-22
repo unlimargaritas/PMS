@@ -11,7 +11,7 @@ from app import app
 from apps import commonmodules as cm
 from apps import home
 from apps.faculty import faculty_home, faculty_profile
-from apps.accountabilities import accountabilities_home, accountabilities_profile
+from apps.props import props_home, props_profile
 
 CONTENT_STYLE = {
     "margin-left": "1em",
@@ -76,10 +76,10 @@ def displaypage(pathname, sessionlogout, currentuserid):
             returnlayout = faculty_home.layout
     elif pathname == '/faculty/faculty_profile':  
             returnlayout = faculty_profile.layout
-    elif pathname == '/accountabilities':  
-            returnlayout = accountabilities_home.layout
-    elif pathname == '/accountabilities/accountabilities_profile':  
-            returnlayout = accountabilities_profile.layout
+    elif pathname == '/props':  
+            returnlayout = props_home.layout
+    elif pathname == '/props/props_profile':  
+            returnlayout = props_profile.layout
     else:
         raise PreventUpdate
         
