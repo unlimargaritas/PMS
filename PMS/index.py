@@ -78,6 +78,8 @@ def displaypage(pathname, sessionlogout, currentuserid):
             returnlayout = faculty_profile.layout
     elif pathname == '/login':  
             returnlayout = login.layout
+    elif pathname == '/account':  
+            returnlayout = account_profile.layout
     elif pathname == '/props':  
             returnlayout = props_home.layout
     elif pathname == '/props/props_profile':  
