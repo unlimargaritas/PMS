@@ -21,6 +21,7 @@ navbar = dbc.Navbar(
         dbc.NavLink("Home", href="/home", style=navlink_style),
         dbc.NavLink("Faculty", href="/faculty", style=navlink_style),
         dbc.NavLink("Accountabilities", href="/props", style=navlink_style),
+        dbc.NavLink("Account", href="/account", style=navlink_style),
         dbc.NavLink("Login", href="/login", style=navlink_style),
         dbc.NavLink("Logout", href="/logout", style=navlink_style),
     ],
